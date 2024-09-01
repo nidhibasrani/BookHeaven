@@ -4,6 +4,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Loader from "./Loader";
+//Cart
 const Cart = () => {
   const navigate = useNavigate();
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
