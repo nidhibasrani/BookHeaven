@@ -22,7 +22,7 @@ const Profile = () => {
     } else {
       const fetch = async () => {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/getUserData",
+          `${import.meta.env.VITE_SERVER_URL}/getUserData`,
           { headers }
         );
         setProfileData(response.data);
